@@ -1,0 +1,16 @@
+.cursor-firefly {
+	position: fixed;
+	width: 650px;
+	height: 650px;
+	background: radial-gradient(
+		circle,
+		rgba(53, 192, 148, 0.146) 0%,
+		rgba(12, 26, 48, 0) 70%
+	); /* Transición más suave del color */
+	border-radius: 50%;
+	pointer-events: none; /* Evita que interfiera con el clic */
+	z-index: 2;
+	mix-blend-mode: lighten; /* Mezcla el color con el fondo */
+	animation: firefly 1.5s ease-in-out infinite;
+	filter: blur(100px); /* Menos difuminado para una transición más natural */
+}
