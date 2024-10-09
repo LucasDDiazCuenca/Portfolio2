@@ -85,6 +85,7 @@ const TopMenu: React.FC = () => {
 								animate="visible"
 								transition={{ duration: 0.5, delay: 0.1, ease: "linear" }}
 								className="relative h-10 w-24 rounded-sm overflow-hidden border border-[#6aedd9] text-[#6aedd9] shadow-2xl transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-[#6aedd9] before:duration-300 before:ease-out hover:text-white hover:shadow-[#6aedd9] hover:before:h-32 hover:before:w-32 hover:before:opacity-80"
+								onClick={() => window.open("cv-lucas.pdf", "_blank")}
 							>
 								Resume
 							</motion.button>
