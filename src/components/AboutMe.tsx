@@ -75,6 +75,7 @@ const AboutMe: React.FC = () => {
 					<motion.p variants={itemVariants} className="text-[#828ba1] w-11/12 tracking-wider mb-6">
 						Here are a few technologies I've been working with recently:{" "}
 					</motion.p>
+
 					<motion.div variants={itemVariants} className="grid grid-cols-2 gap-4">
 						<ul>
 							<li className="flex text-[#828ba1]">
@@ -107,6 +108,7 @@ const AboutMe: React.FC = () => {
 						</ul>
 					</motion.div>
 				</div>
+
 				<motion.div variants={itemVariants} className="relative">
 					<div className="relative group">
 						<img
