@@ -112,7 +112,7 @@ const AboutMe: React.FC = () => {
 						<img
 							src={lucasPic}
 							alt="Lucas Diaz"
-							className="w-64 h-64 object-cover relative z-50 transition-all duration-200 filter sepia group-hover:filter-none group-hover:translate-x-[-5px] group-hover:translate-y-[-5px]"
+							className="w-64 h-64 object-cover relative z-40 transition-all duration-200 filter sepia group-hover:filter-none group-hover:translate-x-[-5px] group-hover:translate-y-[-5px]"
 							style={{ filter: "sepia(1) hue-rotate(121deg) saturate(241%) brightness(81%)" }}
 						/>
 						<div
