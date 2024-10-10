@@ -8,7 +8,7 @@ const SelfIntroduction: React.FC = () => {
 	};
 
 	return (
-		<div className="2xl:mt-72 xl:mt-40 lg:mt-40 md:mt-40 sm:mt-40  2xl:w-6/12 xl:w-9/12 lg:w-9/12 md:w-9/12 sm:w-10/12 m-auto ">
+		<div className="2xl:mt-72 xl:mt-40 lg:mt-40 md:mt-40 sm:mt-40  2xl:w-6/12 xl:w-9/12 lg:w-9/12 md:w-9/12 sm:w-10/12 m-auto w-11/12 mt-20 ">
 			<motion.p
 				variants={textVariant}
 				initial="hidden"
