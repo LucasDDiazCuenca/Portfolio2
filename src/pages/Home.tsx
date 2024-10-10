@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./Home.scss";
 import TopMenu from "../components/TopMenu";
-import Laterals from "../components/Laterals";
+// import Laterals from "../components/Laterals";
 import SelfIntroduction from "../components/SelfIntroduction";
 import AboutMe from "../components/AboutMe";
-import WhereIWorked from "../components/WhereIWorked";
-import SomeThingIBuild from "../components/SomeThingIBuild";
-import OtherNoteworthyProjects from "../components/OtherNoteworthyProjects";
-import WhatsNext from "../components/WhatsNext";
+// import WhereIWorked from "../components/WhereIWorked";
+// import SomeThingIBuild from "../components/SomeThingIBuild";
+// import OtherNoteworthyProjects from "../components/OtherNoteworthyProjects";
+// import WhatsNext from "../components/WhatsNext";
 import Footer from "../components/Footer";
 
 const Home: React.FC = () => {
