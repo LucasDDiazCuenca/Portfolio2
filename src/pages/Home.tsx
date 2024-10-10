@@ -35,12 +35,12 @@ const Home: React.FC = () => {
 				}}
 			></div>
 			<TopMenu />
-			<Laterals />
+			{/* <Laterals /> */}
 			<SelfIntroduction />
 			<div id="about">
 				<AboutMe />
 			</div>
-			<div id="experience">
+			{/* <div id="experience">
 				<WhereIWorked />
 			</div>
 			<div id="work">
@@ -49,7 +49,7 @@ const Home: React.FC = () => {
 			</div>
 			<div id="contact">
 				<WhatsNext />
-			</div>
+			</div> */}
 			<Footer />
 		</div>
 	);

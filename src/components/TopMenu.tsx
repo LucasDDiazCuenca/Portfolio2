@@ -5,6 +5,7 @@ import "./Components.scss";
 // IMPORTS OF IMAGES
 import lucasLogoImg from "../assets/lucas-logo.svg";
 import mobileMenuImg from "../assets/mobileMenu.svg";
+import closeMenuImg from "../assets/close.svg";
 
 const TopMenu: React.FC = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -108,36 +109,41 @@ const TopMenu: React.FC = () => {
 
 				{/* Menú móvil */}
 				<motion.div
-					className="fixed top-0 right-0 w-64 h-screen bg-[#0c1a30] shadow-lg z-50 md:hidden"
+					className="fixed top-0 right-0 w-64 h-full bg-[#0b111b] shadow-2xl z-50 md:hidden"
 					variants={menuVariants}
 					initial="closed"
 					animate={isMenuOpen ? "open" : "closed"}
 					transition={transition}
 				>
-					<div className="flex justify-end p-4">
+					<div className="flex justify-end p-4 bg-[#0b111b]">
 						<button onClick={() => setIsMenuOpen(false)} className="text-white">
-							X
+							<img src={closeMenuImg} alt="Close" className="bg-[#0b111b]" />
 						</button>
 					</div>
-					<nav className="robotoFont text-[#c4d1e9] text-sm p-4">
-						<ul className="flex flex-col gap-4">
+					<nav className="robotoFont text-[#c4d1e9] text-sm p-4 bg-[#0b111b]">
+						<ul className="flex flex-col gap-8 bg-[#0b111b]">
 							{navItems.map((item) => (
-								<motion.li key={item.id} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+								<motion.li
+									key={item.id}
+									whileHover={{ scale: 1.05 }}
+									whileTap={{ scale: 0.95 }}
+									className="bg-[#0b111b]"
+								>
 									<a
 										href={item.sectionId}
-										className="hover:text-[#6aedd9] transition duration-200"
+										className="hover:text-[#6aedd9] transition duration-200 bg-[#0b111b]"
 										onClick={(e) => {
 											handleSmoothScroll(e, item.sectionId);
 											setIsMenuOpen(false);
 										}}
 									>
-										<span className="text-[#6aedd9]">{item.id}.</span> {item.text}
+										<span className="text-[#6aedd9] bg-[#0b111b]">{item.id}.</span> {item.text}
 									</a>
 								</motion.li>
 							))}
 							<motion.li whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
 								<button
-									className="relative h-10 w-full rounded-sm overflow-hidden border border-[#6aedd9] text-[#6aedd9] shadow-2xl transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-[#6aedd9] before:duration-300 before:ease-out hover:text-white hover:shadow-[#6aedd9] hover:before:h-32 hover:before:w-full hover:before:opacity-80"
+									className="relative h-10 w-full rounded-sm overflow-hidden border border-[#6aedd9] text-[#6aedd9] shadow-2xl bg-[#0b111b] transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-[#6aedd9] before:duration-300 before:ease-out hover:text-white hover:shadow-[#6aedd9] hover:before:h-32 hover:before:w-full hover:before:opacity-80"
 									onClick={() => window.open("cv-lucas.pdf", "_blank")}
 								>
 									Resume
