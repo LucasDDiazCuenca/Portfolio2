@@ -13,7 +13,7 @@ const SomeThingIBuild = () => {
 	};
 
 	return (
-		<div ref={ref} className="mt-[200px] mb-[200px] 2xl:w-[900px] xl:w-[900px] lg:w-8/12 m-auto">
+		<div ref={ref} className="mt-[200px] mb-[200px] 2xl:w-[900px] xl:w-[900px] lg:w-8/12 w-10/12 m-auto">
 			<motion.p
 				initial={{ y: 100, opacity: 0 }}
 				animate={isInView ? { y: 0, opacity: 1 } : {}}
@@ -36,9 +36,9 @@ const SomeThingIBuild = () => {
 				transition={{ ...transition, duration: 0.4, delay: 0.2 }}
 				className="flex flex-col items-center"
 			>
-				<p className="text-[#828ba1] text-center mb-10 w-[600px]">
+				<p className="text-[#828ba1] text-center mb-10 sm:w-[600px]">
 					While I’m not actively pursuing new opportunities, I’m always open to hearing about interesting
-					projects or collaborations. Feel free to reach out with any questions or just to say hello—I’d love
+					projects or collaborations. Feel free to reach out with any questions or just to say hello. I’d love
 					to connect!
 				</p>
 				<a
