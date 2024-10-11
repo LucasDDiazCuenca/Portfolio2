@@ -101,7 +101,7 @@ const OtherNoteworthyProjects = () => {
 					target="_blank"
 					className="relative flex items-center justify-center h-10 w-56 rounded-sm overflow-hidden border border-[#6aedd9] text-[#6aedd9] shadow-2xl transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-[#6aedd9] before:duration-300 before:ease-out hover:text-white hover:shadow-[#6aedd9] hover:before:h-56 hover:before:w-56 hover:before:opacity-80"
 				>
-					<span className="relative z-10">Watch my entire GitHub</span>
+					<span className="relative z-10 bg-transparent">Watch my entire GitHub</span>
 				</a>
 			</motion.div>
 		</div>
