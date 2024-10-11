@@ -30,7 +30,7 @@ const AboutMe: React.FC = () => {
 
 	return (
 		<motion.div
-			className="sm:mt-[600px] mt-96 mb-[300px] 2xl:w-[900px] xl:w-[900px] lg:w-8/12 m-auto sm:px-0 px-6"
+			className="sm:mt-[600px] mt-96 sm:mb-[300px] mb-0 2xl:w-[900px] xl:w-[900px] lg:w-8/12 m-auto sm:px-0 px-6"
 			variants={containerVariants}
 			initial="hidden"
 			whileInView="visible"
@@ -38,7 +38,7 @@ const AboutMe: React.FC = () => {
 		>
 			<motion.h2
 				variants={itemVariants}
-				className="text-3xl font-semibold relative after:content-[''] after:block after:w-5/12 after:h-[1px] after:bg-gray-700 after:absolute after:top-1/2 sm:after:left-[calc(23%+0.5rem)] after:left-[calc(48%+0.2rem)] text-[#cdd6f0]"
+				className="text-3xl font-semibold relative after:content-[''] after:block after:w-5/12 after:h-[1px] after:bg-gray-700 after:absolute after:top-1/2 sm:after:left-[calc(23%+0.5rem)] after:left-[calc(50%+0.2rem)] text-[#cdd6f0]"
 			>
 				<span className="text-[#6aedd9] robotoFont text-xl sm:mr-5 mr-1">01.</span> About Me
 			</motion.h2>

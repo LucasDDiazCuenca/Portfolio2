@@ -48,17 +48,21 @@ const WorkExperience = () => {
 	};
 
 	return (
-		<div ref={ref} className="mt-[200px] mb-[300px] 2xl:w-[900px] xl:w-[900px] lg:w-8/12 m-auto">
+		<div
+			ref={ref}
+			className="sm:mt-[200px] mt-40 mb-[300px] 2xl:w-[900px] xl:w-[900px] lg:w-8/12 m-auto p-6 sm:p-0 "
+		>
 			<motion.h2
 				initial="hidden"
 				animate={isInView ? "visible" : "hidden"}
 				variants={textVariants}
-				className="text-3xl font-semibold relative after:content-[''] after:block after:w-5/12 after:h-[1px] after:bg-gray-700 after:absolute after:top-1/2 after:left-[calc(37%+0.5rem)] text-[#cdd6f0] mb-7"
+				className="text-3xl font-semibold relative after:content-[''] after:block sm:after:w-5/12 after:w-2/12 after:h-[1px] after:bg-gray-700 after:absolute after:top-1/2 sm:after:left-[calc(37%+0.5rem)] after:left-[calc(83%+0.2rem)] text-[#cdd6f0] mb-7"
 			>
-				<span className="text-[#6aedd9] robotoFont text-xl mr-5">02.</span> Where I've Worked
+				<span className="text-[#6aedd9] robotoFont text-xl sm:mr-5 mr-1">02.</span> Where I've Worked
 			</motion.h2>
+
 			<motion.div
-				className="flex gap-5 w-11/12 justify-between"
+				className="flex flex-col sm:flex-row gap-5 w-11/12 justify-between"
 				initial="hidden"
 				animate={isInView ? "visible" : "hidden"}
 				variants={containerVariants}
@@ -101,7 +105,7 @@ const WorkExperience = () => {
 				</motion.div>
 
 				{selectedOption === "Careexpand" && (
-					<motion.div variants={itemVariants} className="h-96 w-[600px]">
+					<motion.div variants={itemVariants} className="h-96 sm:w-[600px]">
 						<div>
 							<motion.h3 variants={textVariants} className="text-lg font-semibold">
 								Frontend Engineer & UI/UX Designer{" "}
@@ -140,7 +144,7 @@ const WorkExperience = () => {
 					</motion.div>
 				)}
 				{selectedOption === "Artek Soluciones I." && (
-					<motion.div variants={itemVariants} className="h-96 w-[600px]">
+					<motion.div variants={itemVariants} className="h-96 sm:w-[600px]">
 						<div>
 							<motion.h3 variants={textVariants} className="text-lg font-semibold">
 								Fullstack Developer{" "}
