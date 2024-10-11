@@ -9,8 +9,8 @@ const OtherNoteworthyProjects = () => {
 
 	const transition = {
 		type: "spring",
-		damping: 8,
-		stiffness: 120,
+		damping: 12,
+		stiffness: 100,
 		duration: 0.3,
 	};
 
@@ -37,10 +37,10 @@ const OtherNoteworthyProjects = () => {
 	];
 
 	return (
-		<div ref={ref} className="sm:mb-[300px] 2xl:w-[1000px] xl:w-[1000px] lg:w-[1000px] m-auto">
+		<div ref={ref} className="px-4 sm:px-0 mb-20 sm:mb-[300px] max-w-[1000px] mx-auto">
 			<motion.h2
-				initial={{ x: -200, opacity: 0 }}
-				animate={isInView ? { x: 0, opacity: 1 } : {}}
+				initial={{ y: 50, opacity: 0 }}
+				animate={isInView ? { y: 0, opacity: 1 } : {}}
 				transition={{ ...transition, duration: 0.4 }}
 				className="text-3xl font-semibold text-[#cdd6f0] text-center mb-12"
 			>
@@ -48,7 +48,7 @@ const OtherNoteworthyProjects = () => {
 			</motion.h2>
 
 			<motion.div
-				className="flex sm:flex-row flex-col items-center justify-center gap-5 w-full"
+				className="flex flex-col sm:flex-row items-center justify-center gap-5 w-full"
 				initial={{ opacity: 0 }}
 				animate={isInView ? { opacity: 1 } : {}}
 				transition={{ staggerChildren: 0.3 }}
@@ -56,8 +56,8 @@ const OtherNoteworthyProjects = () => {
 				{projects.map((project, index) => (
 					<motion.div
 						key={index}
-						className="w-[320px] h-[270px] bg-[#132241] p-5 hover:-translate-y-2 transition-all duration-300 rounded-md shadow-xl"
-						initial={{ y: -50, opacity: 0 }}
+						className="w-full sm:w-[320px] h-auto sm:h-[270px] bg-[#132241] p-5 hover:-translate-y-2 transition-all duration-300 rounded-md shadow-xl"
+						initial={{ y: 50, opacity: 0 }}
 						animate={isInView ? { y: 0, opacity: 1 } : {}}
 						transition={{ ...transition, delay: index * 0.1 }}
 						whileHover={{
@@ -79,7 +79,7 @@ const OtherNoteworthyProjects = () => {
 						</div>
 						<h3 className="text-lg font-semibold w-fit bg-[#132241] mb-4">{project.title}</h3>
 						<p className="text-[#828ba1] bg-[#132241] mb-4">{project.description}</p>
-						<div className="flex gap-4 bg-[#132241]">
+						<div className="flex flex-wrap gap-4 bg-[#132241]">
 							{project.technologies.map((tech) => (
 								<span key={tech} className="text-[#828ba1] robotoFont text-sm font-light bg-[#132241]">
 									{tech}
@@ -92,8 +92,8 @@ const OtherNoteworthyProjects = () => {
 
 			<motion.div
 				className="flex justify-center mt-12"
-				initial={{ x: 200, opacity: 0 }}
-				animate={isInView ? { x: 0, opacity: 1 } : {}}
+				initial={{ y: 50, opacity: 0 }}
+				animate={isInView ? { y: 0, opacity: 1 } : {}}
 				transition={{ ...transition, duration: 0.4 }}
 			>
 				<a
@@ -101,7 +101,7 @@ const OtherNoteworthyProjects = () => {
 					target="_blank"
 					className="relative flex items-center justify-center h-10 w-56 rounded-sm overflow-hidden border border-[#6aedd9] text-[#6aedd9] shadow-2xl transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-[#6aedd9] before:duration-300 before:ease-out hover:text-white hover:shadow-[#6aedd9] hover:before:h-56 hover:before:w-56 hover:before:opacity-80"
 				>
-					Watch my entire GitHub
+					<span className="relative z-10">Watch my entire GitHub</span>
 				</a>
 			</motion.div>
 		</div>

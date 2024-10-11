@@ -14,7 +14,7 @@ const Laterals: React.FC = () => {
 	};
 
 	return (
-		<div className="absolute-container flex justify-between items-center fixed bottom-0 w-full bg-transparent">
+		<div className="absolute-container justify-between items-center fixed bottom-0 w-full bg-transparent hidden sm:flex">
 			<motion.div
 				initial={{ y: 100, opacity: 0 }}
 				animate={{ y: 0, opacity: 1 }}
