@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./Home.scss";
 import TopMenu from "../components/TopMenu";
-// import Laterals from "../components/Laterals";
+import Laterals from "../components/Laterals";
 import SelfIntroduction from "../components/SelfIntroduction";
 import AboutMe from "../components/AboutMe";
 import WhereIWorked from "../components/WhereIWorked";
 import SomeThingIBuild from "../components/SomeThingIBuild";
 import OtherNoteworthyProjects from "../components/OtherNoteworthyProjects";
 import WhatsNext from "../components/WhatsNext";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 
 const Home: React.FC = () => {
 	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -35,7 +35,7 @@ const Home: React.FC = () => {
 				}}
 			></div>
 			<TopMenu />
-			{/* <Laterals /> */}
+			<Laterals />
 			<SelfIntroduction />
 			<div id="about">
 				<AboutMe />
@@ -50,7 +50,7 @@ const Home: React.FC = () => {
 			<div id="contact">
 				<WhatsNext />
 			</div>
-			{/* <Footer /> */}
+			<Footer />
 		</div>
 	);
 };
