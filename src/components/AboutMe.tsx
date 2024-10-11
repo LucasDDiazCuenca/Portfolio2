@@ -16,10 +16,10 @@ const AboutMe: React.FC = () => {
 	};
 
 	const itemVariants = {
-		hidden: { opacity: 0, x: 100 },
+		hidden: { opacity: 0, y: 20 },
 		visible: {
 			opacity: 1,
-			x: 0,
+			y: 0,
 			transition: {
 				type: "spring",
 				damping: 12,
@@ -34,7 +34,7 @@ const AboutMe: React.FC = () => {
 			variants={containerVariants}
 			initial="hidden"
 			whileInView="visible"
-			viewport={{ once: true }}
+			viewport={{ once: true, amount: 0.2 }}
 		>
 			<motion.h2
 				variants={itemVariants}
