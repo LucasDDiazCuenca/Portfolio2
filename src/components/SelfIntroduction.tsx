@@ -8,13 +8,13 @@ const SelfIntroduction: React.FC = () => {
 	};
 
 	return (
-		<div className="2xl:mt-72 xl:mt-40 lg:mt-40 md:mt-40 sm:mt-40  2xl:w-6/12 xl:w-9/12 lg:w-9/12 md:w-9/12 sm:w-10/12 m-auto w-11/12 mt-20 ">
+		<div className="2xl:mt-72 xl:mt-40 lg:mt-40 md:mt-40 sm:mt-40  2xl:w-6/12 xl:w-9/12 lg:w-9/12 md:w-9/12 sm:w-10/12 m-auto w-11/12 mt-48 px-3 sm:px-0">
 			<motion.p
 				variants={textVariant}
 				initial="hidden"
 				animate="visible"
 				transition={{ duration: 0.5, delay: 0.1 }}
-				className="robotoFont text-[#6aedd9]"
+				className="robotoFont text-[#6aedd9] mb-3 sm:mb-0"
 			>
 				Hi, my name is
 			</motion.p>
@@ -24,7 +24,7 @@ const SelfIntroduction: React.FC = () => {
 				initial="hidden"
 				animate="visible"
 				transition={{ duration: 0.5, delay: 0.3 }}
-				className="text-[#cdd6f6] text-7xl font-semibold "
+				className="text-[#cdd6f6] text-4xl sm:text-7xl font-semibold mb-3 sm:mb-0"
 			>
 				Lucas Diaz.
 			</motion.h2>
@@ -34,7 +34,7 @@ const SelfIntroduction: React.FC = () => {
 				initial="hidden"
 				animate="visible"
 				transition={{ duration: 0.5, delay: 0.5 }}
-				className="text-[#7683a4] text-7xl mb-5 font-semibold"
+				className="text-[#7683a4] text-4xl sm:text-7xl mb-5 font-semibold"
 			>
 				I build things for the web!
 			</motion.p>
