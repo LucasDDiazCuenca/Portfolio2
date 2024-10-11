@@ -37,7 +37,7 @@ const OtherNoteworthyProjects = () => {
 	];
 
 	return (
-		<div ref={ref} className="mb-[300px] 2xl:w-[1000px] xl:w-[1000px] lg:w-[1000px] m-auto">
+		<div ref={ref} className="sm:mb-[300px] 2xl:w-[1000px] xl:w-[1000px] lg:w-[1000px] m-auto">
 			<motion.h2
 				initial={{ x: -200, opacity: 0 }}
 				animate={isInView ? { x: 0, opacity: 1 } : {}}
@@ -48,7 +48,7 @@ const OtherNoteworthyProjects = () => {
 			</motion.h2>
 
 			<motion.div
-				className="flex gap-5 w-full"
+				className="flex sm:flex-row flex-col items-center justify-center gap-5 w-full"
 				initial={{ opacity: 0 }}
 				animate={isInView ? { opacity: 1 } : {}}
 				transition={{ staggerChildren: 0.3 }}

@@ -6,8 +6,8 @@ import SelfIntroduction from "../components/SelfIntroduction";
 import AboutMe from "../components/AboutMe";
 import WhereIWorked from "../components/WhereIWorked";
 import SomeThingIBuild from "../components/SomeThingIBuild";
-// import OtherNoteworthyProjects from "../components/OtherNoteworthyProjects";
-// import WhatsNext from "../components/WhatsNext";
+import OtherNoteworthyProjects from "../components/OtherNoteworthyProjects";
+import WhatsNext from "../components/WhatsNext";
 // import Footer from "../components/Footer";
 
 const Home: React.FC = () => {
@@ -45,11 +45,11 @@ const Home: React.FC = () => {
 			</div>
 			<div id="work">
 				<SomeThingIBuild />
-				{/* <OtherNoteworthyProjects /> */}
+				<OtherNoteworthyProjects />
 			</div>
-			{/* <div id="contact">
+			<div id="contact">
 				<WhatsNext />
-			</div> */}
+			</div>
 			{/* <Footer /> */}
 		</div>
 	);
