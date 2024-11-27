@@ -2,6 +2,8 @@
 
 A modern, responsive portfolio website built with React, TypeScript, and Vite, featuring smooth animations and an elegant design.
 
+🌐 [View Live Demo](https://lucasdiaz.site/)
+
 ![Portfolio Preview](./public/lucasReadmeImg.png)
 
 ## 🌟 Features
@@ -201,7 +203,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 Lucas Diaz - lucasdamian30@gmail.com
 
-Project Link: [https://github.com/yourusername/portfolio](https://github.com/yourusername/portfolio)
+My Github: [https://github.com/LucasDDiazCuenca](https://github.com/LucasDDiazCuenca)
+
+🌐 [View Live Demo](https://lucasdiaz.site/)
 
 ## 🙏 Acknowledgments
 
