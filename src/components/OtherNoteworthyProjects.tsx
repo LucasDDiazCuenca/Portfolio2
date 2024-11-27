@@ -16,6 +16,12 @@ const OtherNoteworthyProjects = () => {
 
 	const projects = [
 		{
+			title: "Read Piano Music Sheet",
+			description: "This app allows you to improve your piano skills by reading music sheets.",
+			technologies: ["React", "TypeScript", "Tailwind", "framer-motion"],
+			link: "https://github.com/LucasDDiazCuenca/PianoNoteStudy",
+		},
+		{
 			title: "OPR Mobile App",
 			description: "This app uses a basic algorithm for solo play against AI in the wargame One Page Rules.",
 			technologies: ["React", "Javascript", "Tailwind"],
@@ -48,7 +54,7 @@ const OtherNoteworthyProjects = () => {
 			</motion.h2>
 
 			<motion.div
-				className="flex flex-col sm:flex-row items-center justify-center gap-5 w-full"
+				className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-5 w-full"
 				initial={{ opacity: 0 }}
 				animate={isInView ? { opacity: 1 } : {}}
 				transition={{ staggerChildren: 0.3 }}
